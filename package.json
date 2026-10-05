@@ -1,24 +1,32 @@
 {
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.15.2",
-    "cloudinary": "^1.37.3",
+    "cloudinary": "^2.11.0",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^5.0.0",
     "dotenv": "^16.3.1",
-    "ejs": "^3.1.9",
+    "ejs": "^3.1.10",
     "ejs-mate": "^4.0.0",
-    "express": "^4.18.2",
+    "express": "^4.22.3",
     "express-mongo-sanitize": "^2.2.0",
     "express-session": "^1.17.3",
     "helmet": "^7.0.0",
-    "joi": "^17.9.2",
+    "joi": "^17.13.8",
     "method-override": "^3.0.0",
-    "mongoose": "^7.2.3",
-    "multer": "^1.4.5-lts.1",
-    "multer-storage-cloudinary": "^4.0.0",
+    "mongoose": "^7.8.12",
+    "multer": "^2.4.0",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^8.0.0",
-    "sanitize-html": "^2.11.0"
+    "sanitize-html": "^2.18.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "node --test"
+  },
+  "overrides": {
+    "connect-mongo": {
+      "kruptein": "3.0.8"
+    }
   }
 }
