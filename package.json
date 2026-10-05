@@ -21,6 +21,12 @@
     "sanitize-html": "^2.18.0"
   },
   "scripts": {
+    "start": "node app.js",
     "test": "node --test"
+  },
+  "overrides": {
+    "connect-mongo": {
+      "kruptein": "3.0.8"
+    }
   }
 }
